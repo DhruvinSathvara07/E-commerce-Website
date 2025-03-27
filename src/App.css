@@ -8,6 +8,10 @@
     --shadow-color: rgba(0, 0, 0, 0.1);
 }
 
+/**===========================================
+=          Section: Header Styles           =
+**===========================================*/
+
 /* Navbar Styling */
 .navbar {
     background: var(--nav-bg);
@@ -132,6 +136,10 @@
     visibility: visible;
 }
 
+/**===========================================
+=          Section: Hero Styles           =
+**===========================================*/
+
 .hero {
     height: 85vh;
     background: linear-gradient(to right, #f8f9fa, #e9ecef);
@@ -141,4 +149,384 @@
 .hero-image {
     max-width: 100%;
     border-radius: 10px;
+}
+
+
+/**===========================================
+=          Section: Login Model Styles           =
+**===========================================*/
+/* Center modal and improve UI */
+.modal-dialog-centered {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Login Modal Styling */
+.login-modal {
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+}
+
+.modal-header {
+    background: #f8f9fa;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.modal-body {
+    padding: 20px;
+}
+
+.input-group-text {
+    background: #f0f0f0;
+    border-right: 0;
+}
+
+.form-control {
+    border-left: 0;
+}
+
+.btn-login {
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    border: none;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 6px;
+    transition: 0.3s ease-in-out;
+}
+
+.btn-login:hover {
+    background: linear-gradient(135deg, #ff6a4d, #fea45a);
+}
+
+.forgot-password {
+    color: #ff7e5f;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.signup-link {
+    color: #ff7e5f;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.signup-link:hover {
+    text-decoration: underline;
+}
+
+
+/**===========================================
+=          Section: Tshirt Styles           =
+**===========================================*/
+/* Tshirt.css */
+.tshirt-container {
+    padding: 4rem 2rem;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    min-height: 100vh;
+}
+
+.tshirt-heading {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 4rem;
+    background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.tshirt-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tshirt-card {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    backdrop-filter: blur(10px);
+}
+
+.tshirt-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+}
+
+.card-media {
+    position: relative;
+    overflow: hidden;
+    padding-top: 120%;
+}
+
+.card-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(0,0,0,0) 60%, rgba(0,0,0,0.7) 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.tshirt-card:hover .image-overlay {
+    opacity: 1;
+}
+
+.tshirt-card:hover .card-image {
+    transform: scale(1.1);
+}
+
+.card-badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: #e74c3c;
+    color: white;
+    padding: 6px 18px;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    z-index: 2;
+    animation: float 3s ease-in-out infinite;
+}
+
+.card-badge.new {
+    background: #2ecc71;
+}
+
+.card-content {
+    padding: 1.5rem;
+    position: relative;
+    z-index: 1;
+}
+
+.card-title {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+    color: #2c3e50;
+}
+
+.card-description {
+    color: #7f8c8d;
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.4;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.current-price {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #2c3e50;
+    position: relative;
+}
+
+.current-price::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #3498db;
+    transition: width 0.3s ease;
+}
+
+.tshirt-card:hover .current-price::after {
+    width: 100%;
+}
+
+.original-price {
+    font-size: 0.9rem;
+    color: #95a5a6;
+    text-decoration: line-through;
+}
+
+.card-actions {
+    display: flex;
+    gap: 0.8rem;
+    align-items: center;
+}
+
+.cart-button {
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.cart-button span {
+    position: relative;
+    z-index: 1;
+}
+
+.cart-icon {
+    transform: translateX(30px);
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.cart-button:hover {
+    padding-right: 2.5rem;
+    background: #2980b9;
+}
+
+.cart-button:hover .cart-icon {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.wishlist-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(231, 76, 60, 0.1);
+    border: none;
+    color: #e74c3c;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.wishlist-button:hover {
+    background: #e74c3c;
+    color: white;
+    transform: scale(1.1);
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+}
+
+@media (max-width: 768px) {
+    .tshirt-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .tshirt-heading {
+        font-size: 2rem;
+    }
+    
+    .card-title {
+        font-size: 1.2rem;
+    }
+}
+
+/* Filters Section */
+.filters-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem auto;
+    max-width: 1200px;
+    padding: 0 1rem;
+}
+
+.categories-filter {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.categories-filter button {
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    border: 2px solid #2c3e50;
+    background: transparent;
+    color: #2c3e50;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.categories-filter button:hover {
+    background: #2c3e50;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.categories-filter button.active {
+    background: #2c3e50;
+    color: white;
+    border-color: #2c3e50;
+}
+
+.sort-filter select {
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    border: 2px solid #2c3e50;
+    background: transparent;
+    color: #2c3e50;
+    cursor: pointer;
+    font-weight: 500;
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 1em;
+    padding-right: 2.5rem;
+}
+
+.sort-filter select:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(44, 62, 80, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .filters-container {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: flex-start;
+    }
+    
+    .categories-filter {
+        gap: 0.5rem;
+    }
+    
+    .categories-filter button {
+        padding: 0.6rem 1rem;
+        font-size: 0.9rem;
+    }
+    
+    .sort-filter select {
+        width: 100%;
+    }
 }
