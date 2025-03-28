@@ -1,32 +1,34 @@
-[
-    {
-        "id": 1,
-        "name": "Naruto Uzumaki",
-        "price": 24.99,
-        "originalPrice": 35.99,
-        "category": "naruto",
-        "image": "https://thecoup.in/wp-content/uploads/2023/04/anme-1.jpg",
-        "description": "Premium quality anime t-shirt with HD print",
-        "isNew": false,
-        "discount": 30
-    },
-    {
-        "id": 2,
-        "name": "Goku Ultra Instinct",
-        "price": 29.99,
-        "category": "dragon-ball",
-        "image": "https://www.jiomart.com/images/product/original/rvc5gr5nsr/euroqu-unisex-anime-back-printed-oversized-t-shirt-white-size-large-product-images-rvc5gr5nsr-0-202211270738.jpg?im=Resize=(500,630)",
-        "description": "Limited edition Dragon Ball Z merchandise",
-        "isNew": true
-    },
-    {
-        "id": 3,
-        "name": "Survey Corps",
-        "price": 27.99,
-        "originalPrice": 32.99,
-        "category": "attack-on-titan",
-        "image": "https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/24915222/2023/10/20/e7895058-eacf-4959-989f-b40f7eeeb4f41697781696906-Crazymonk-Jujutsu-Kaisen-Gojo-Satoru-Anime-Printed-Cotton-Ov-4.jpg",
-        "description": "Official Attack on Titan collection",
-        "isNew": false
-    }
-]
+{
+    "tshirts": [
+        {
+            "id": 1,
+            "name": "Naruto Uzumaki",
+            "price": 24.99,
+            "originalPrice": 35.99,
+            "category": "naruto",
+            "image": "https://thecoup.in/wp-content/uploads/2023/04/anme-1.jpg",
+            "description": "Premium quality anime t-shirt with HD print",
+            "isNew": false,
+            "discount": 30
+        },
+        {
+            "id": 2,
+            "name": "Goku Ultra Instinct",
+            "price": 29.99,
+            "category": "dragon-ball",
+            "image": "https://www.jiomart.com/images/product/original/rvc5gr5nsr/euroqu-unisex-anime-back-printed-oversized-t-shirt-white-size-large-product-images-rvc5gr5nsr-0-202211270738.jpg?im=Resize=(500,630)",
+            "description": "Limited edition Dragon Ball Z merchandise",
+            "isNew": true
+        },
+        {
+            "id": 3,
+            "name": "Survey Corps",
+            "price": 27.99,
+            "originalPrice": 32.99,
+            "category": "attack-on-titan",
+            "image": "https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/24915222/2023/10/20/e7895058-eacf-4959-989f-b40f7eeeb4f41697781696906-Crazymonk-Jujutsu-Kaisen-Gojo-Satoru-Anime-Printed-Cotton-Ov-4.jpg",
+            "description": "Official Attack on Titan collection",
+            "isNew": false
+        }
+    ]
+}
